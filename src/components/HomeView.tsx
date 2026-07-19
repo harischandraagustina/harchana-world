@@ -72,7 +72,7 @@ export default function HomeView({
                   {featuredPost.title}
                 </h2>
                 
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed line-clamp-3 mb-6">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
                   {featuredPost.subtitle}
                 </p>
               </div>
@@ -160,7 +160,7 @@ export default function HomeView({
                       {post.title}
                     </h3>
                     
-                    <p className="text-gray-500 text-sm line-clamp-2 leading-relaxed">
+                    <p className="text-gray-500 text-sm leading-relaxed">
                       {post.subtitle}
                     </p>
 
