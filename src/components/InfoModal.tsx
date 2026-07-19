@@ -23,7 +23,7 @@ export default function InfoModal({ type, onClose }: InfoModalProps) {
             {/* Avatar image */}
             <div className="relative shrink-0">
               <img
-                src="/src/assets/images/foto_profile.jpg"
+                src={avatarError ? "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" : "/pulic/images/foto_profile.jpg"
                 alt="Haris Chandra Agustina"
                 referrerPolicy="no-referrer"
                 className="w-24 h-24 rounded-full object-cover border-4 border-white/20 shadow-lg"
