@@ -3,7 +3,7 @@ id: "2"
 title: Membangun Kebiasaan Menulis Produktif di Era Digital
 subtitle: Bagaimana cara mempertahankan momentum menulis di tengah padatnya
   aktivitas harian, notifikasi media sosial, dan godaan prokrastinasi.
-date: Juli 14, 2026
+date: July 14, 2026
 readTime: 4 min read
 image: https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800
 ---
