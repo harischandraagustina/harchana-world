@@ -1,0 +1,6 @@
+{
+  "name": "Harchana World",
+  "description": "Personal blog of Haris Chandra Agustina containing thoughts, digital monuments, and writing passions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

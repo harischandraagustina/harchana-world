@@ -1,0 +1,25 @@
+backend:
+  name: github
+  # Ganti repo di bawah ini dengan repository GitHub Anda sendiri (format: username/repo-name)
+  repo: harisdesignpro/harchana-world
+  branch: main
+
+# Folder tempat gambar/media disimpan oleh CMS
+media_folder: "src/assets/images"
+# Path publik untuk mengakses gambar tersebut di aplikasi
+public_folder: "/src/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Artikel / Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "ID Unik (misal: 5)", name: "id", widget: "string" }
+      - { label: "Judul Artikel", name: "title", widget: "string" }
+      - { label: "Sub-judul / Deskripsi", name: "subtitle", widget: "string" }
+      - { label: "Tanggal (misal: Apr 8, 12:00)", name: "date", widget: "string" }
+      - { label: "Durasi Baca (misal: 5 min read)", name: "readTime", widget: "string" }
+      - { label: "Gambar Unggulan (Featured Image)", name: "image", widget: "image" }
+      - { label: "Konten Artikel (Markdown)", name: "body", widget: "markdown" }
