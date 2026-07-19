@@ -1,13 +1,14 @@
 ---
 id: "1"
 title: "Introduction: Seorang Pemimpin dan Prasasti Digital"
-subtitle: "Halo semua perkenalkan namaku Haris Chandra Agustina. Sebuah tulisan perkenalan tentang impian menjadi terkenal, motivasi membuat prasasti digital, dan gairah menulis yang terinspirasi oleh kisah Harry Potter."
-date: "Apr 4, 15:42"
-readTime: "5 min read"
-image: "/images/foto_desk.jpg"
+subtitle: Halo semua perkenalkan namaku Haris Chandra Agustina. Sebuah tulisan
+  perkenalan tentang impian menjadi terkenal, motivasi membuat prasasti digital,
+  dan gairah menulis yang terinspirasi oleh kisah Harry Potter.
+date: Apr 4, 15:42
+readTime: 5 min read
+image: /images/foto_desk.jpg
 ---
-
-Halo semua, perkenalkan namaku **Haris Chandra Agustina**. Bisa dipanggil Haris, tapi kalau di rumah dipanggil Agus karena kata ibuku, aku bagus (Ganteng) hehehe. Sebelumnya aku ucapkan selamat datang di blogku ini, jadi sebagai perkenalan mungkin tidak banyak yang bisa aku ceritakan.
+Halo semua, perkenalkan namaku **Haris Chandra Agustina**. Bisa dipanggil Haris, tapi kalau di rumah dipanggil Agus. Sebelumnya aku ucapkan selamat datang di blogku ini, jadi sebagai perkenalan mungkin tidak banyak yang bisa aku ceritakan.
 
 ## Alasan Pertama: Menjadi Terkenal
 
