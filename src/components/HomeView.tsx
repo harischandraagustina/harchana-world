@@ -30,6 +30,16 @@ export default function HomeView({
       post.paragraphs.some((p) => p.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
+  // Sort posts in descending order of ID for the Latest Feed (larger ID = newer article)
+  const sortedPosts = [...filteredPosts].sort((a, b) => {
+    const idA = Number(a.id);
+    const idB = Number(b.id);
+    if (!isNaN(idA) && !isNaN(idB)) {
+      return idB - idA;
+    }
+    return b.id.localeCompare(a.id);
+  });
+
   // Dynamic state for currently reading simulation
   const [activeReaders, setActiveReaders] = useState(3);
   useEffect(() => {
@@ -130,7 +140,7 @@ export default function HomeView({
             </h3>
           </div>
 
-          {filteredPosts.length === 0 ? (
+          {sortedPosts.length === 0 ? (
             <div className="bg-white rounded-xl border border-gray-100 p-12 text-center">
               <p className="text-gray-500 text-sm">No articles found matching your query.</p>
               <button
@@ -142,7 +152,7 @@ export default function HomeView({
             </div>
           ) : (
             <div className="space-y-6">
-              {filteredPosts.map((post, index) => (
+              {sortedPosts.map((post, index) => (
                 <motion.div
                   key={post.id}
                   initial={{ opacity: 0, y: 10 }}
