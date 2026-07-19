@@ -31,12 +31,40 @@ export default function App() {
     localStorage.setItem("harchana_views", totalViews.toString());
   }, [totalViews]);
 
+  // Synchronize activePostId with URL query params (deep linking & popstate)
+  useEffect(() => {
+    const handleUrlChange = () => {
+      const params = new URLSearchParams(window.location.search);
+      const postParam = params.get("post") || params.get("id");
+      if (postParam) {
+        const exists = posts.some((p) => p.id === postParam);
+        if (exists) {
+          setActivePostId(postParam);
+        } else {
+          setActivePostId(null);
+        }
+      } else {
+        setActivePostId(null);
+      }
+    };
+
+    handleUrlChange();
+    window.addEventListener("popstate", handleUrlChange);
+    return () => {
+      window.removeEventListener("popstate", handleUrlChange);
+    };
+  }, [posts]);
+
   // 3. Action Handlers
   const handleSelectPost = (postId: string) => {
     setActivePostId(postId);
     
     // Increment total views on click (realistic tracking)
     setTotalViews((prev) => prev + 1);
+
+    // Update browser URL query parameter
+    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?post=${encodeURIComponent(postId)}`;
+    window.history.pushState({ path: newUrl }, "", newUrl);
     
     // Scroll window to top
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -44,6 +72,11 @@ export default function App() {
 
   const handleBackToHome = () => {
     setActivePostId(null);
+
+    // Reset URL to base path
+    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+    window.history.pushState({ path: newUrl }, "", newUrl);
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -59,7 +92,7 @@ export default function App() {
           setSearchQuery(query);
           // If searching, go back to home feed to show filtered results immediately!
           if (activePostId) {
-            setActivePostId(null);
+            handleBackToHome();
           }
         }}
         onGoHome={handleBackToHome}
