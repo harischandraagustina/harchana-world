@@ -4,7 +4,7 @@ title: "Introduction: Seorang Pemimpi dan Prasasti Digital"
 subtitle: Sebuah tulisan perkenalan tentang impian menjadi terkenal, motivasi
   membuat prasasti digital, dan gairah menulis yang terinspirasi oleh kisah
   Harry Potter.
-date: APR 12, 2020
+date: April 12, 2020
 readTime: 5 min
 image: /images/foto_desk.jpg
 ---
