@@ -7,7 +7,7 @@ export const POST_IMAGE = "/images/foto_desk.jpg";
 export const defaultAuthor = {
   name: "Haris Chandra Agustina",
   avatar: AUTHOR_IMAGE,
-  title: "SENIOR CULTURAL CRITIC & AUTHOR",
+  title: "AUTHOR",
   bio: "Halo semua perkenalkan namaku Haris Chandra Agustina. Sebuah tulisan perkenalan tentang impian menjadi terkenal, motivasi membuat prasasti digital, dan gairah menulis yang terinspirasi oleh kisah Harry Potter."
 };
 
