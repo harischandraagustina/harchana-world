@@ -38,7 +38,7 @@ export default function InfoModal({ type, onClose }: InfoModalProps) {
                 Haris Chandra Agustina
               </h4>
               <p className="text-xs uppercase tracking-widest font-mono text-emerald-300 font-bold">
-                Senior Cultural Critic & Author
+                Author
               </p>
               <div className="flex flex-wrap justify-center sm:justify-start gap-3 pt-2 text-xs text-emerald-100/80">
                 <span className="flex items-center gap-1">
@@ -47,7 +47,7 @@ export default function InfoModal({ type, onClose }: InfoModalProps) {
                 </span>
                 <span className="flex items-center gap-1">
                   <Globe className="w-3.5 h-3.5 text-emerald-400" />
-                  harchana.world
+                  harchanaworld.com
                 </span>
               </div>
             </div>
