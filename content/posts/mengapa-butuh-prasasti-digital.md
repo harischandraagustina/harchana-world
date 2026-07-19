@@ -16,7 +16,7 @@ Prasasti zaman dahulu dibuat dari batu agar bisa bertahan ratusan bahkan ribuan 
 
 ## 1. Kendali Penuh Atas Narasi
 
-Di platform sosial, format konten ditentukan oleh penyedia jasa. Anda dibatasi oleh jumlah karakter, ukuran gambar, atau algoritme distribusi. Dengan blog sendiri seperti **harchana.world**, Anda memegang kendali penuh atas bagaimana tulisan Anda disajikan dan diabadikan.
+Di platform sosial, format konten ditentukan oleh penyedia jasa. Anda dibatasi oleh jumlah karakter, ukuran gambar, atau algoritme distribusi. Dengan blog sendiri seperti **harchanaworld.com**, Anda memegang kendali penuh atas bagaimana tulisan Anda disajikan dan diabadikan.
 
 ## 2. Membangun Rekam Jejak Intelektual
 
