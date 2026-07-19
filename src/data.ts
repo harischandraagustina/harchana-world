@@ -1,8 +1,8 @@
 import { Post, Comment } from "./types";
 
 // Dynamic relative paths to the generated images from assets
-export const AUTHOR_IMAGE = "/src/assets/images/foto_profile.jpg";
-export const POST_IMAGE = "/src/assets/images/foto_desk.jpg";
+export const AUTHOR_IMAGE = "/images/foto_profile.jpg";
+export const POST_IMAGE = "/images/foto_desk.jpg";
 
 export const defaultAuthor = {
   name: "Haris Chandra Agustina",
