@@ -24,19 +24,32 @@ function parseFrontmatter(rawContent: string) {
     const yaml = match[1];
     const body = match[2];
     
-    yaml.split(/\r?\n/).forEach((line) => {
-      const parts = line.split(":");
-      if (parts.length >= 2) {
-        const key = parts[0].trim();
-        const val = parts.slice(1).join(":").trim();
+    let currentKey: string | null = null;
+    let currentValue: string = "";
+
+    const flushAttribute = () => {
+      if (currentKey) {
+        let val = currentValue.trim();
         // Remove enclosing quotes if any
-        let cleanVal = val;
         if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
-          cleanVal = val.substring(1, val.length - 1);
+          val = val.substring(1, val.length - 1);
         }
-        result.attributes[key] = cleanVal;
+        result.attributes[currentKey] = val;
+      }
+    };
+
+    yaml.split(/\r?\n/).forEach((line) => {
+      const keyMatch = line.match(/^([a-zA-Z0-9_-]+):\s*([\s\S]*)$/);
+      if (keyMatch) {
+        flushAttribute();
+        currentKey = keyMatch[1];
+        currentValue = keyMatch[2];
+      } else if (currentKey !== null) {
+        currentValue += "\n" + line;
       }
     });
+
+    flushAttribute();
     result.body = body.trim();
   } else {
     result.body = rawContent.trim();
