@@ -24,6 +24,8 @@ export default function HomeView({
     (post) =>
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.subtitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.contentMarkdown?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.contentHtml?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.sections?.some((s) => s.heading.toLowerCase().includes(searchQuery.toLowerCase()) || s.paragraphs.some(p => p.toLowerCase().includes(searchQuery.toLowerCase()))) ||
       post.paragraphs.some((p) => p.toLowerCase().includes(searchQuery.toLowerCase()))
   );
