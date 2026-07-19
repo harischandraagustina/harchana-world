@@ -6,7 +6,7 @@ backend:
   base_url: "https://dry-thunder-93ae.agusgp2-3-ag.workers.dev"
 
 # Folder tempat gambar/media disimpan oleh CMS
-media_folder: "src/assets/images"
+media_folder: "public/src/assets/images"
 # Path publik untuk mengakses gambar tersebut di aplikasi
 public_folder: "/src/assets/images"
 
