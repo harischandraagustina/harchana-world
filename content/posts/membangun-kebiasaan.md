@@ -1,10 +1,11 @@
 ---
 id: "2"
-title: "Membangun Kebiasaan Menulis Produktif di Era Digital"
-subtitle: "Bagaimana cara mempertahankan momentum menulis di tengah padatnya aktivitas harian, notifikasi media sosial, dan godaan prokrastinasi."
-date: "Apr 5, 10:20"
-readTime: "4 min read"
-image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800"
+title: Membangun Kebiasaan Menulis Produktif di Era Digital
+subtitle: Bagaimana cara mempertahankan momentum menulis di tengah padatnya
+  aktivitas harian, notifikasi media sosial, dan godaan prokrastinasi.
+date: Juli 14, 2026
+readTime: 4 min read
+image: https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800
 ---
 
 Menulis secara konsisten seringkali menjadi tantangan terbesar bagi seorang blogger pemula maupun profesional. Di era di mana perhatian kita terus-menerus terpecah oleh notifikasi dan konten instan, meluangkan waktu satu atau dua jam untuk merenung dan merangkai kata terasa semakin sulit.
