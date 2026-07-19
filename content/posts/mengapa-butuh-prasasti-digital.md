@@ -1,5 +1,5 @@
 ---
-id: "1"
+id: "3"
 title: Mengapa Setiap Orang Butuh 'Prasasti Digital' Sendiri
 subtitle: Di era media sosial yang serba cepat dan fana, memiliki blog pribadi
   adalah cara terbaik menjaga warisan pemikiran kita tetap hidup.
