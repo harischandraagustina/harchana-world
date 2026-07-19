@@ -3,6 +3,7 @@ backend:
   # Ganti repo di bawah ini dengan repository GitHub Anda sendiri (format: username/repo-name)
   repo: harischandraagustina/harchana-world
   branch: main
+  base_url: "https://dry-thunder-93ae.agusgp2-3-ag.workers.dev"
 
 # Folder tempat gambar/media disimpan oleh CMS
 media_folder: "src/assets/images"
