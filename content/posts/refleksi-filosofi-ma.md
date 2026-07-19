@@ -1,10 +1,11 @@
 ---
 id: "4"
-title: "Refleksi Filosofi 'Ma' dalam Desain & Penulisan Kreatif"
-subtitle: "Menjelajahi konsep ruang kosong asal Jepang yang memberi jiwa pada karya visual dan ketenangan pada baris-baris tulisan kita."
-date: "Apr 7, 11:30"
-readTime: "4 min read"
-image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800"
+title: Refleksi Filosofi 'Ma' dalam Desain & Penulisan Kreatif
+subtitle: Menjelajahi konsep ruang kosong asal Jepang yang memberi jiwa pada
+  karya visual dan ketenangan pada baris-baris tulisan kita.
+date: July 16, 2026
+readTime: 4 min read
+image: https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800
 ---
 
 Dalam budaya tradisional Jepang, terdapat sebuah konsep estetika yang sangat indah bernama **Ma** (間). Konsep ini merujuk pada ruang kosong, jeda, atau keheningan yang disengaja. 'Ma' bukan berarti ketiadaan makna, melainkan ruang yang justru memberi makna pada objek di sekelilingnya.
