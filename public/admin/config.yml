@@ -1,7 +1,7 @@
 backend:
   name: github
   # Ganti repo di bawah ini dengan repository GitHub Anda sendiri (format: username/repo-name)
-  repo: harisdesignpro/harchana-world
+  repo: harischandraagustina/harchana-world
   branch: main
 
 # Folder tempat gambar/media disimpan oleh CMS
