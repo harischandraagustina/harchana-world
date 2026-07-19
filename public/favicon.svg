@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Dark slate rounded squircle background for high contrast on both light and dark browser tabs -->
+  <rect width="32" height="32" rx="7" fill="#0f172a"/>
+  
+  <!-- Stylized Fountain Pen Nib in Emerald Green Gradient -->
+  <path d="M16 6L22 13V20C22 22.2091 20.2091 24 18 24H14C11.7909 24 10 22.2091 10 20V13L16 6Z" fill="url(#emeraldGradient)" />
+  
+  <!-- Nib slit/center line -->
+  <path d="M16 6V15" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Digital node / breathing white dot -->
+  <circle cx="16" cy="15" r="2" fill="#ffffff" />
+  
+  <defs>
+    <linearGradient id="emeraldGradient" x1="10" y1="6" x2="22" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+</svg>
