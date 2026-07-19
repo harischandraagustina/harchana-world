@@ -1,10 +1,11 @@
 ---
-id: "3"
-title: "Mengapa Setiap Orang Butuh 'Prasasti Digital' Sendiri"
-subtitle: "Di era media sosial yang serba cepat dan fana, memiliki blog pribadi adalah cara terbaik menjaga warisan pemikiran kita tetap hidup."
-date: "Apr 6, 08:15"
-readTime: "6 min read"
-image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800"
+id: "1"
+title: Mengapa Setiap Orang Butuh 'Prasasti Digital' Sendiri
+subtitle: Di era media sosial yang serba cepat dan fana, memiliki blog pribadi
+  adalah cara terbaik menjaga warisan pemikiran kita tetap hidup.
+date: Apr 6, 08:15
+readTime: 6 min read
+image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800
 ---
 
 Pernahkah Anda berpikir ke mana perginya status Facebook, cuitan Twitter, atau foto Instagram yang kita unggah bertahun-tahun lalu? Kebanyakan dari mereka terkubur oleh algoritme, terlupakan dalam tumpukan feed tanpa meninggalkan jejak yang mendalam bagi generasi berikutnya.
