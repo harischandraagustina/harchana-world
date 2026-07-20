@@ -7,7 +7,7 @@ export const POST_IMAGE = "/images/foto_desk.jpg";
 export const defaultAuthor = {
   name: "Haris Chandra Agustina",
   avatar: AUTHOR_IMAGE,
-  title: "AUTHOR",
+  title: "SENIOR CULTURAL CRITIC & AUTHOR",
   bio: "Halo semua perkenalkan namaku Haris Chandra Agustina. Sebuah tulisan perkenalan tentang impian menjadi terkenal, motivasi membuat prasasti digital, dan gairah menulis yang terinspirasi oleh kisah Harry Potter."
 };
 
@@ -87,3 +87,17 @@ export const defaultPosts: Post[] = parsedMarkdownPosts.sort((a, b) => {
   }
   return a.id.localeCompare(b.id);
 });
+
+// Helper function to turn strings/titles into URL-friendly slugs
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    // Replace non-alphanumeric characters (except spaces and hyphens) with nothing
+    .replace(/[^\w\s-]/g, "")
+    // Replace spaces and underscores with a single hyphen
+    .replace(/[\s_]+/g, "-")
+    .trim()
+    // Remove leading and trailing hyphens
+    .replace(/^-+|-+$/g, "");
+}
+
