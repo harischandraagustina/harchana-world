@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
     <loc>https://harchanaworld.com/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Post: Introduction: Seorang Pemimpin dan Prasasti Digital -->
   <url>
-    <loc>https://harchanaworld.com/posts/introduction-seorang-pemimpi-dan-prasasti-digital</loc>
+    <loc>https://harchanaworld.com/post/introduction-seorang-pemimpin-dan-prasasti-digital</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Post: Membangun Kebiasaan Menulis Produktif di Era Digital -->
   <url>
-    <loc>https://harchanaworld.com/posts/membangun-kebiasaan</loc>
+    <loc>https://harchanaworld.com/post/membangun-kebiasaan-menulis-produktif-di-era-digital</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Post: Mengapa Setiap Orang Butuh 'Prasasti Digital' Sendiri -->
   <url>
-    <loc>https://harchanaworld.com/posts/mengapa-butuh-prasasti-digital</loc>
+    <loc>https://harchanaworld.com/post/mengapa-setiap-orang-butuh-prasasti-digital-sendiri</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Post: Refleksi Filosofi 'Ma' dalam Desain & Penulisan Kreatif -->
   <url>
-    <loc>https://harchanaworld.com/posts/refleksi-filosofi-ma</loc>
+    <loc>https://harchanaworld.com/post/refleksi-filosofi-ma-dalam-desain-penulisan-kreatif</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
