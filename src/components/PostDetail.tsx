@@ -20,7 +20,7 @@ export default function PostDetail({
   const [copied, setCopied] = useState(false);
 
   const handleShare = () => {
-    const url = `${window.location.protocol}//${window.location.host}${window.location.pathname}?post=${encodeURIComponent(slugify(post.title))}`;
+    const url = `${window.location.protocol}//${window.location.host}/post/${encodeURIComponent(slugify(post.title))}`;
     navigator.clipboard.writeText(url).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
