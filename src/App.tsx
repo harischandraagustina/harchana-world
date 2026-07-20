@@ -31,14 +31,23 @@ export default function App() {
     localStorage.setItem("harchana_views", totalViews.toString());
   }, [totalViews]);
 
-  // Synchronize activePostId with URL query params (deep linking & popstate) using slugs
+  // Synchronize activePostId with URL (deep linking & popstate) using clean paths or query params
   useEffect(() => {
     const handleUrlChange = () => {
+      const path = window.location.pathname;
       const params = new URLSearchParams(window.location.search);
-      const postParam = params.get("post") || params.get("id");
+      let postParam = params.get("post") || params.get("id");
+
+      // Extract from clean URL pathname /post/slug-name
+      if (!postParam && path.startsWith("/post/")) {
+        postParam = path.substring(6); // Get everything after "/post/"
+      }
+
       if (postParam) {
+        // Decode URI component to handle spaces or special characters safely
+        const decodedParam = decodeURIComponent(postParam);
         // Find matching post by checking ID or the slug of the title
-        const matchedPost = posts.find((p) => p.id === postParam || slugify(p.title) === postParam);
+        const matchedPost = posts.find((p) => p.id === decodedParam || slugify(p.title) === decodedParam);
         if (matchedPost) {
           setActivePostId(matchedPost.id);
         } else {
@@ -67,8 +76,8 @@ export default function App() {
     const post = posts.find((p) => p.id === postId);
     const postSlug = post ? slugify(post.title) : postId;
 
-    // Update browser URL query parameter with the slug
-    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?post=${encodeURIComponent(postSlug)}`;
+    // Update browser URL using clean pathname /post/slug
+    const newUrl = `${window.location.protocol}//${window.location.host}/post/${encodeURIComponent(postSlug)}`;
     window.history.pushState({ path: newUrl }, "", newUrl);
     
     // Scroll window to top
@@ -79,7 +88,7 @@ export default function App() {
     setActivePostId(null);
 
     // Reset URL to base path
-    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+    const newUrl = `${window.location.protocol}//${window.location.host}/`;
     window.history.pushState({ path: newUrl }, "", newUrl);
 
     window.scrollTo({ top: 0, behavior: "smooth" });
