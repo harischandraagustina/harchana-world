@@ -9,7 +9,8 @@ import Footer from "./components/Footer";
 import HomeView from "./components/HomeView";
 import PostDetail from "./components/PostDetail";
 import InfoModal from "./components/InfoModal";
-import { defaultPosts, defaultAuthor, slugify } from "./data";
+import { defaultPosts, defaultAuthor } from "./data";
+import { slugify } from "./utils";
 import { Post } from "./types";
 import { motion, AnimatePresence } from "motion/react";
 
