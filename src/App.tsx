@@ -50,6 +50,13 @@ export default function App() {
         const matchedPost = posts.find((p) => p.id === decodedParam || slugify(p.title) === decodedParam);
         if (matchedPost) {
           setActivePostId(matchedPost.id);
+          
+          // Seamlessly replace legacy query param URL in browser history with the clean URL format
+          const postSlug = slugify(matchedPost.title);
+          const cleanUrl = `${window.location.protocol}//${window.location.host}/post/${encodeURIComponent(postSlug)}`;
+          if (window.location.pathname !== `/post/${postSlug}` || window.location.search !== "") {
+            window.history.replaceState({ path: cleanUrl }, "", cleanUrl);
+          }
         } else {
           setActivePostId(null);
         }
