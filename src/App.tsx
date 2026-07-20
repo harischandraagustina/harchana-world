@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import HomeView from "./components/HomeView";
 import PostDetail from "./components/PostDetail";
 import InfoModal from "./components/InfoModal";
-import { defaultPosts, defaultAuthor } from "./data";
+import { defaultPosts, defaultAuthor, slugify } from "./data";
 import { Post } from "./types";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -31,15 +31,16 @@ export default function App() {
     localStorage.setItem("harchana_views", totalViews.toString());
   }, [totalViews]);
 
-  // Synchronize activePostId with URL query params (deep linking & popstate)
+  // Synchronize activePostId with URL query params (deep linking & popstate) using slugs
   useEffect(() => {
     const handleUrlChange = () => {
       const params = new URLSearchParams(window.location.search);
       const postParam = params.get("post") || params.get("id");
       if (postParam) {
-        const exists = posts.some((p) => p.id === postParam);
-        if (exists) {
-          setActivePostId(postParam);
+        // Find matching post by checking ID or the slug of the title
+        const matchedPost = posts.find((p) => p.id === postParam || slugify(p.title) === postParam);
+        if (matchedPost) {
+          setActivePostId(matchedPost.id);
         } else {
           setActivePostId(null);
         }
@@ -62,8 +63,12 @@ export default function App() {
     // Increment total views on click (realistic tracking)
     setTotalViews((prev) => prev + 1);
 
-    // Update browser URL query parameter
-    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?post=${encodeURIComponent(postId)}`;
+    // Get the post to find its slugified title
+    const post = posts.find((p) => p.id === postId);
+    const postSlug = post ? slugify(post.title) : postId;
+
+    // Update browser URL query parameter with the slug
+    const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?post=${encodeURIComponent(postSlug)}`;
     window.history.pushState({ path: newUrl }, "", newUrl);
     
     // Scroll window to top
